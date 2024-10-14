@@ -67,7 +67,7 @@ const loginUser = async (req, res) => {
         email: checkUser.email,
         userName: checkUser.userName,
       },
-      process.env.secretkey,
+      process.env.SECRETKEY,
       { expiresIn: "60m" }
     );
 
